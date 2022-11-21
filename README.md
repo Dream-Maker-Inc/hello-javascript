@@ -4,7 +4,8 @@
 
 - 배열 함수를 익히기 위한 연습 문제입니다.
 - 각 문제에서 언급한 조건을 참고하여 문제를 풀어 주세요.
-- 각 문제의 출력값은 `Expected value` 와 **완전히 동일**해야 합니다.
+- 1~5번 문제의 출력값은 `Expected value` 와 **완전히 동일**해야 합니다.
+- 중복 코드를 최소화합니다.
 
 <br/>
 
@@ -92,7 +93,7 @@
 <br/>
 
 6. 다음 객체에서 items 요소를 한 항목씩 웹 페지이지에 출럭하시오.
-> 이 문제는의 `CSS` 결과물은 `Expected value` 와 동일하지 않아도 되며, 출력된 값의 형태 (`HTML`, `JavaScript`) 만 같으면 됩니다.
+> 이 문제는의 `CSS` 결과물은 `Expected value` 와 동일하지 않아도 되며, 출력하는 값을 어떠한 정제된 형태 (표, 리스트 등) 로 보여주면 됩니다.
 ```javascript
 [
     {
@@ -118,6 +119,9 @@
     }
 ]
 ```
+
+- Expected value:
+
 <img src="./source/6/result.png">
 
 <br/>
@@ -128,7 +132,7 @@
 (UI 표현, JS 로직으로 표현 등 표현 방식은 무관. 단, JS의 배열 함수 사용 필수)
 
 <details>
-<summary>코드 보기</summary>
+<summary>데이터 보기</summary>
 <div markdown="1">
 
 ```javascript
@@ -163,6 +167,9 @@
 </div>
 </details>
 
+- Expected output:
+<img src="./source/7/result.png"/>
+
 <br/>
 <br/>
 
@@ -175,6 +182,7 @@
 
 - 최상단에 `모든 약관에 동의합니다` 를 구현할 것
 - `필수 약관`에 모두 동의된 상태이면 `모든 약관에 동의합니다`에 자동 체크될 것
+- `필수 약관`에 모두 동의된 상태에서 `모든 약관에 동의합니다`를 체크 해제할 시 모든 `필수 약관`이 체크 해제될 것
 - `필수 약관`에 모두 동의한 상태에서 `필수 약관` 중 하나의 동의를 풀면 `모든 약관에 동의합니다`가 비활성화 될 것
 - 각 약관을 클릭하면 팝업으로 `내용`이 출력될 것
 
@@ -184,131 +192,162 @@
 <br/>
 
 <details>
-<summary>코드 보기</summary>
+<summary>데이터 보기</summary>
 <div markdown="1">
 
 ```javascript
 [
   {
     "id": 1,
-    "email": "이용 약관 1",
-    "content": "이용 약관 1 내용",
-    "isRequired": true
+    "title": "이용 약관 1", // 약관 제목
+    "content": "이용 약관 1 내용", // 약관 내용
+    "isRequired": true // 필수 동의 여부
   },
   {
     "id": 2,
-    "email": "이용 약관 2",
+    "title": "이용 약관 2",
     "content": "이용 약관 2 내용",
     "isRequired": true
   },
   {
     "id": 3,
-    "email": "이용 약관 3",
+    "title": "이용 약관 3",
     "content": "이용 약관 3 내용",
     "isRequired": true
   },
   {
     "id": 4,
-    "email": "이용 약관 4",
+    "title": "이용 약관 4",
     "content": "이용 약관 4 내용",
     "isRequired": true
   },
   {
     "id": 5,
-    "email": "이용 약관 5",
+    "title": "이용 약관 5",
     "content": "이용 약관 5 내용",
     "isRequired": true
   },
   {
     "id": 6,
-    "email": "이용 약관 6",
+    "title": "이용 약관 6",
     "content": "이용 약관 6 내용",
     "isRequired": true
   },
   {
     "id": 7,
-    "email": "이용 약관 7",
+    "title": "이용 약관 7",
     "content": "이용 약관 7 내용",
     "isRequired": true
   },
   {
     "id": 8,
-    "email": "이용 약관 8",
+    "title": "이용 약관 8",
     "content": "이용 약관 8 내용",
     "isRequired": true
   },
   {
     "id": 9,
-    "email": "이용 약관 9,
+    "title": "이용 약관 9",
     "content": "이용 약관 9 내용",
     "isRequired": true
   },
   {
     "id": 10,
-    "email": "이용 약관 10",
+    "title": "이용 약관 10",
     "content": "이용 약관 10 내용",
     "isRequired": true
   },
   {
     "id": 11,
-    "email": "이용 약관 11",
+    "title": "이용 약관 11",
     "content": "이용 약관 11 내용",
     "isRequired": false
   },
   {
     "id": 12,
-    "email": "이용 약관 12",
+    "title": "이용 약관 12",
     "content": "이용 약관 12 내용",
     "isRequired": false
   },
    {
     "id": 13,
-    "email": "이용 약관 13",
+    "title": "이용 약관 13",
     "content": "이용 약관 13 내용",
     "isRequired": false
   },
   {
     "id": 14,
-    "email": "이용 약관 14",
+    "title": "이용 약관 14",
     "content": "이용 약관 14 내용",
     "isRequired": false
   },
   {
     "id": 15,
-    "email": "이용 약관 15",
+    "title": "이용 약관 15",
     "content": "이용 약관 1 내용",
     "isRequired": false
   },
   {
     "id": 16,
-    "email": "이용 약관 16",
+    "title": "이용 약관 16",
     "content": "이용 약관 16 내용",
     "isRequired": false
   },
   {
     "id": 17,
-    "email": "이용 약관 17",
+    "title": "이용 약관 17",
     "content": "이용 약관 17 내용",
     "isRequired": false
   },
   {
     "id": 18,
-    "email": "이용 약관 18",
+    "title": "이용 약관 18",
     "content": "이용 약관 18 내용",
     "isRequired": false
   },
   {
     "id": 19,
-    "email": "이용 약관 19",
+    "title": "이용 약관 19",
     "content": "이용 약관 19 내용",
     "isRequired": false
   },
   {
     "id": 20,
-    "email": "이용 약관 20",
+    "title": "이용 약관 20",
     "content": "이용 약관 20 내용",
     "isRequired": false
   },
-
 ]
+```
+</div>
+</details>
+
+<br/>
+<br/>
+
+9. 다음은 신규 회원의 회원가입 정보이다.<br/>
+회원 가입 정보 중 비밀 정보인 비밀번호를 별도로 분리하고 저장하려고 한다.<br/>
+객체에서 비밀번호만 제외한 모든 정보를 저장하는 두 가지 이상의 방법을 제시하시오.
+
+> Original value:
+```javascript
+const data = {
+    name: 'hong',
+    email: 'hone@gmail.com',
+    pasword: 'hongPA$$W0RD',
+    age: 30,
+    region: 'korea',
+    birth: 1990,
+}
+```
+
+> Expected value:
+```javascript
+const data = {
+    name: 'hong',
+    email: 'hone@gmail.com',
+    age: 30,
+    region: 'korea',
+    birth: 1990,
+}
 ```
