@@ -119,3 +119,196 @@
 ]
 ```
 <img src="./source/6/result.png">
+
+<br/>
+<br/>
+
+7. 다음은 모 플랫폼의 회원 목록이다.<br/>
+`simmy` 회원이 로그인 할 경우, 해당 회원의 이름을 가져와 출력하시오.
+(UI 표현, JS 로직으로 표현 등 표현 방식은 무관. 단, JS의 배열 함수 사용 필수)
+
+<details>
+<summary>코드 보기</summary>
+<div markdown="1">
+
+```javascript
+[
+  {
+    "id": 1,
+    "email": "simmy@ureca.im",
+    "name": "심소망",
+    "description": "웹 프론트엔드 개발자",
+  },
+  {
+    "id": 2,
+    "email": "emily@ureca.im",
+    "name": "염혜지",
+    "description": "리액트 개발자",
+  },
+  {
+    "id": 3,
+    "email": "la@ureca.im",
+    "name": "라정우",
+    "description": "백엔드 개발자",
+  },
+  {
+    "id": 4,
+    "email": "andy@ureca.im",
+    "name": "한장현",
+    "description": "인프라 관리자",
+  },
+]
+```
+
+</div>
+</details>
+
+<br/>
+<br/>
+
+8. 다음은 모 플랫폼의 이용 약관 데이터이다.<br/>
+다음 조건을 준수하여 UI를 구현하시오.
+
+<details>
+<summary>조건 보기</summary>
+<div markdown="1">
+
+- 최상단에 `모든 약관에 동의합니다` 를 구현할 것
+- `필수 약관`에 모두 동의된 상태이면 `모든 약관에 동의합니다`에 자동 체크될 것
+- `필수 약관`에 모두 동의한 상태에서 `필수 약관` 중 하나의 동의를 풀면 `모든 약관에 동의합니다`가 비활성화 될 것
+- 각 약관을 클릭하면 팝업으로 `내용`이 출력될 것
+
+</div>
+</details>
+
+<br/>
+
+<details>
+<summary>코드 보기</summary>
+<div markdown="1">
+
+```javascript
+[
+  {
+    "id": 1,
+    "email": "이용 약관 1",
+    "content": "이용 약관 1 내용",
+    "isRequired": true
+  },
+  {
+    "id": 2,
+    "email": "이용 약관 2",
+    "content": "이용 약관 2 내용",
+    "isRequired": true
+  },
+  {
+    "id": 3,
+    "email": "이용 약관 3",
+    "content": "이용 약관 3 내용",
+    "isRequired": true
+  },
+  {
+    "id": 4,
+    "email": "이용 약관 4",
+    "content": "이용 약관 4 내용",
+    "isRequired": true
+  },
+  {
+    "id": 5,
+    "email": "이용 약관 5",
+    "content": "이용 약관 5 내용",
+    "isRequired": true
+  },
+  {
+    "id": 6,
+    "email": "이용 약관 6",
+    "content": "이용 약관 6 내용",
+    "isRequired": true
+  },
+  {
+    "id": 7,
+    "email": "이용 약관 7",
+    "content": "이용 약관 7 내용",
+    "isRequired": true
+  },
+  {
+    "id": 8,
+    "email": "이용 약관 8",
+    "content": "이용 약관 8 내용",
+    "isRequired": true
+  },
+  {
+    "id": 9,
+    "email": "이용 약관 9,
+    "content": "이용 약관 9 내용",
+    "isRequired": true
+  },
+  {
+    "id": 10,
+    "email": "이용 약관 10",
+    "content": "이용 약관 10 내용",
+    "isRequired": true
+  },
+  {
+    "id": 11,
+    "email": "이용 약관 11",
+    "content": "이용 약관 11 내용",
+    "isRequired": false
+  },
+  {
+    "id": 12,
+    "email": "이용 약관 12",
+    "content": "이용 약관 12 내용",
+    "isRequired": false
+  },
+   {
+    "id": 13,
+    "email": "이용 약관 13",
+    "content": "이용 약관 13 내용",
+    "isRequired": false
+  },
+  {
+    "id": 14,
+    "email": "이용 약관 14",
+    "content": "이용 약관 14 내용",
+    "isRequired": false
+  },
+  {
+    "id": 15,
+    "email": "이용 약관 15",
+    "content": "이용 약관 1 내용",
+    "isRequired": false
+  },
+  {
+    "id": 16,
+    "email": "이용 약관 16",
+    "content": "이용 약관 16 내용",
+    "isRequired": false
+  },
+  {
+    "id": 17,
+    "email": "이용 약관 17",
+    "content": "이용 약관 17 내용",
+    "isRequired": false
+  },
+  {
+    "id": 18,
+    "email": "이용 약관 18",
+    "content": "이용 약관 18 내용",
+    "isRequired": false
+  },
+  {
+    "id": 19,
+    "email": "이용 약관 19",
+    "content": "이용 약관 19 내용",
+    "isRequired": false
+  },
+  {
+    "id": 20,
+    "email": "이용 약관 20",
+    "content": "이용 약관 20 내용",
+    "isRequired": false
+  },
+
+]
+```
