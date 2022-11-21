@@ -1,0 +1,31 @@
+@import url("https: //cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css");
+
+.table {
+    border: 1px solid black;
+    .table-head {
+        background-color: rgba(0, 0, 0, 0.4);
+
+        th {
+            padding: 10px 20px;
+        }
+    }
+    .table-body {
+        tr {
+            &:nth-child(2n) {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        td {
+            padding: 10px 20px;
+
+            &:first-child {
+                text-align: center;
+            }
+
+            &:last-child {
+                text-align: center;
+            }
+        }
+    }
+}

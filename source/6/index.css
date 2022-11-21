@@ -1,0 +1,22 @@
+@import url("https: //cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css");
+.table {
+  border: 1px solid black;
+}
+.table .table-head {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.table .table-head th {
+  padding: 10px 20px;
+}
+.table .table-body tr:nth-child(2n) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.table .table-body td {
+  padding: 10px 20px;
+}
+.table .table-body td:first-child {
+  text-align: center;
+}
+.table .table-body td:last-child {
+  text-align: center;
+}/*# sourceMappingURL=index.css.map */
